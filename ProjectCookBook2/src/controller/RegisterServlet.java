@@ -56,7 +56,7 @@ public class RegisterServlet extends HttpServlet {
 			
 			else{
 				IUserDAO.getDAO(DataSource.DB).addUser(new User(username,password,firstname,lastname,email));
-				request.getRequestDispatcher("/main pages/main.html").forward(request, response);	
+				request.getRequestDispatcher("/main_pages/main.html").forward(request, response);	
 			}
 		}
 		else{
